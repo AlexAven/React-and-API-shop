@@ -3,7 +3,7 @@ function Footer() {
       <div className='footer-copyright'>
         <div className='container'>
         © {new Date().getFullYear()} Copyright
-        <a className='grey-text text-lighten-4 right' href='#!'>Repository</a>
+        <a className='grey-text text-lighten-4 right' href='https://github.com/AlexAven/React-and-API-shop' target='_blank' rel='noreferrer'>MyRepository</a>
         </div>
       </div>
     </footer>
