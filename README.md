@@ -1,3 +1,3 @@
 # This is my React Shop Portfolio Project
-[Demo](https://github.io/AlexAven/React-and-API-shop).
+[Demo](https://AlexAven.github.io/React-and-API-shop).
 
