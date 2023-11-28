@@ -1,6 +1,6 @@
 {
   "name": "shop-project",
-  "home": "https://github.io/AlexAven/React-and-API-shop",
+  "homepage": "https://github.io/AlexAven/React-and-API-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
