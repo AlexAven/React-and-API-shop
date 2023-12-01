@@ -1,13 +1,15 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context';
+
 function CartItem(props) {
     const {
         mainId,
         displayName, 
         regularPrice,
-        quantity,
-        deleteFromCart = Function.prototype,
-        increaseQuantity = Function.prototype,
-        decreaseQuantity= Function.prototype
-    } = props
+        quantity
+    } = props;
+
+    const { deleteFromCart, increaseQuantity, decreaseQuantity } = useContext(ShopContext);
 
     return (
         <li className='collection-item'>{displayName}: {regularPrice} &#x20bd;{' '}
