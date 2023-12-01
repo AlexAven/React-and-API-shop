@@ -1,14 +1,13 @@
-import { useEffect, useContext } from 'react';
-import { ShopContext } from '../context';
+import { useEffect } from 'react';
 
-function Alert() {
-    const { alertName: displayName = '', closeAlert = Function.prototype } = useContext(ShopContext);
+function Alert(props) {
+    const { displayName = '', closeAlert = Function.prototype } = props;
 
     useEffect(() => {
-        const timerId = setTimeout(closeAlert, 3000)
+        const timerID = setTimeout(closeAlert, 3000)
 
         return () => {
-            clearTimeout(timerId)
+            clearTimeout(timerID)
         }
 //eslint-disable-next-line
     }, [displayName]);
