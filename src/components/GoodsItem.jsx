@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context';
+
 function GoodsItem(props) {
     const {
         mainId,
@@ -5,8 +8,9 @@ function GoodsItem(props) {
         displayDescription,
         price: {regularPrice},
         displayAssets: [{full_background}],
-        addToCart = Function.prototype
     } = props;
+
+const {addToCart} = useContext(ShopContext);
 
     return <div className='card'>
         <div className='card-image'>
